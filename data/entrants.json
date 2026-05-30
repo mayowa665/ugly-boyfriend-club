@@ -1,0 +1,14 @@
+[
+  {"name": "Mayowa", "teams": ["co", "ch", "dz", "tr"]},
+  {"name": "Raq", "teams": ["gb-eng", "cv", "uz", "tn"]},
+  {"name": "Con", "teams": ["es", "za", "nz", "ir"]},
+  {"name": "Sam", "teams": ["de", "ca", "au", "at"]},
+  {"name": "Soph", "teams": ["uy", "ec", "ma", "py"]},
+  {"name": "Hannah", "teams": ["br", "mx", "eg", "gh"]},
+  {"name": "Cloud", "teams": ["be", "cw", "jp", "qa"]},
+  {"name": "Goth", "teams": ["hr", "kr", "no", "cz"]},
+  {"name": "Harris", "teams": ["fr", "ba", "ht", "sa"]},
+  {"name": "Bloore", "teams": ["ar", "cd", "pa", "se"]},
+  {"name": "Bolton", "teams": ["nl", "gb-sct", "jo", "us"]},
+  {"name": "Gallou", "teams": ["pt", "iq", "sn", "ci"]}
+]

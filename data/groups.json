@@ -1,0 +1,14 @@
+{
+  "A": ["mx", "kr", "za", "cz"],
+  "B": ["ca", "ch", "qa", "ba"],
+  "C": ["br", "ma", "gb-sct", "ht"],
+  "D": ["us", "au", "py", "tr"],
+  "E": ["de", "ec", "ci", "cw"],
+  "F": ["nl", "jp", "tn", "se"],
+  "G": ["be", "ir", "eg", "nz"],
+  "H": ["es", "uy", "sa", "cv"],
+  "I": ["fr", "sn", "no", "iq"],
+  "J": ["ar", "at", "dz", "jo"],
+  "K": ["pt", "co", "uz", "cd"],
+  "L": ["gb-eng", "hr", "pa", "gh"]
+}

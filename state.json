@@ -1,0 +1,827 @@
+{
+  "updated_at": "2026-05-30T10:13:55Z",
+  "phase": "pre_tournament",
+  "sims": 20000,
+  "entrants": [
+    {
+      "name": "Con",
+      "prob": 0.2088,
+      "odds": "4/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "es",
+          "name": "Spain",
+          "conf": "UEFA",
+          "p": 0.20865,
+          "eliminated": false
+        },
+        {
+          "code": "za",
+          "name": "South Africa",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "nz",
+          "name": "New Zealand",
+          "conf": "OFC",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "ir",
+          "name": "Iran",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Bloore",
+      "prob": 0.1655,
+      "odds": "5/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "ar",
+          "name": "Argentina",
+          "conf": "CMB",
+          "p": 0.16535,
+          "eliminated": false
+        },
+        {
+          "code": "cd",
+          "name": "DR Congo",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "pa",
+          "name": "Panama",
+          "conf": "CCF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "se",
+          "name": "Sweden",
+          "conf": "UEFA",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Harris",
+      "prob": 0.16455,
+      "odds": "5/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "fr",
+          "name": "France",
+          "conf": "UEFA",
+          "p": 0.1644,
+          "eliminated": false
+        },
+        {
+          "code": "ba",
+          "name": "Bosnia and Herzegovina",
+          "conf": "UEFA",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "ht",
+          "name": "Haiti",
+          "conf": "CCF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "sa",
+          "name": "Saudi Arabia",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Raq",
+      "prob": 0.1036,
+      "odds": "17/2",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "gb-eng",
+          "name": "England",
+          "conf": "UEFA",
+          "p": 0.10345,
+          "eliminated": false
+        },
+        {
+          "code": "cv",
+          "name": "Cape Verde",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "uz",
+          "name": "Uzbekistan",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "tn",
+          "name": "Tunisia",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Hannah",
+      "prob": 0.09525,
+      "odds": "19/2",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "br",
+          "name": "Brazil",
+          "conf": "CMB",
+          "p": 0.09015,
+          "eliminated": false
+        },
+        {
+          "code": "mx",
+          "name": "Mexico",
+          "conf": "CCF",
+          "p": 0.005,
+          "eliminated": false
+        },
+        {
+          "code": "eg",
+          "name": "Egypt",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "gh",
+          "name": "Ghana",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Gallou",
+      "prob": 0.0698,
+      "odds": "13/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "pt",
+          "name": "Portugal",
+          "conf": "UEFA",
+          "p": 0.06905,
+          "eliminated": false
+        },
+        {
+          "code": "iq",
+          "name": "Iraq",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "sn",
+          "name": "Senegal",
+          "conf": "CAF",
+          "p": 0.00065,
+          "eliminated": false
+        },
+        {
+          "code": "ci",
+          "name": "Cote d'Ivoire",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Bolton",
+      "prob": 0.0637,
+      "odds": "15/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "nl",
+          "name": "Netherlands",
+          "conf": "UEFA",
+          "p": 0.05775,
+          "eliminated": false
+        },
+        {
+          "code": "gb-sct",
+          "name": "Scotland",
+          "conf": "UEFA",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "jo",
+          "name": "Jordan",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "us",
+          "name": "USA",
+          "conf": "CCF",
+          "p": 0.00585,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Sam",
+      "prob": 0.04225,
+      "odds": "23/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "de",
+          "name": "Germany",
+          "conf": "UEFA",
+          "p": 0.0421,
+          "eliminated": false
+        },
+        {
+          "code": "ca",
+          "name": "Canada",
+          "conf": "CCF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "au",
+          "name": "Australia",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "at",
+          "name": "Austria",
+          "conf": "UEFA",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Goth",
+      "prob": 0.0271,
+      "odds": "36/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "hr",
+          "name": "Croatia",
+          "conf": "UEFA",
+          "p": 0.02665,
+          "eliminated": false
+        },
+        {
+          "code": "kr",
+          "name": "South Korea",
+          "conf": "AFC",
+          "p": 0.00025,
+          "eliminated": false
+        },
+        {
+          "code": "no",
+          "name": "Norway",
+          "conf": "UEFA",
+          "p": 0.00015,
+          "eliminated": false
+        },
+        {
+          "code": "cz",
+          "name": "Czechia",
+          "conf": "UEFA",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Cloud",
+      "prob": 0.02215,
+      "odds": "44/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "be",
+          "name": "Belgium",
+          "conf": "UEFA",
+          "p": 0.02155,
+          "eliminated": false
+        },
+        {
+          "code": "cw",
+          "name": "Curacao",
+          "conf": "CCF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "jp",
+          "name": "Japan",
+          "conf": "AFC",
+          "p": 0.0005,
+          "eliminated": false
+        },
+        {
+          "code": "qa",
+          "name": "Qatar",
+          "conf": "AFC",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Mayowa",
+      "prob": 0.02165,
+      "odds": "45/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "co",
+          "name": "Colombia",
+          "conf": "CMB",
+          "p": 0.0157,
+          "eliminated": false
+        },
+        {
+          "code": "ch",
+          "name": "Switzerland",
+          "conf": "UEFA",
+          "p": 0.00585,
+          "eliminated": false
+        },
+        {
+          "code": "dz",
+          "name": "Algeria",
+          "conf": "CAF",
+          "p": 5e-05,
+          "eliminated": false
+        },
+        {
+          "code": "tr",
+          "name": "Turkiye",
+          "conf": "UEFA",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    },
+    {
+      "name": "Soph",
+      "prob": 0.01675,
+      "odds": "60/1",
+      "alive_teams": 4,
+      "teams": [
+        {
+          "code": "uy",
+          "name": "Uruguay",
+          "conf": "CMB",
+          "p": 0.0149,
+          "eliminated": false
+        },
+        {
+          "code": "ec",
+          "name": "Ecuador",
+          "conf": "CMB",
+          "p": 0.00045,
+          "eliminated": false
+        },
+        {
+          "code": "ma",
+          "name": "Morocco",
+          "conf": "CAF",
+          "p": 0.00135,
+          "eliminated": false
+        },
+        {
+          "code": "py",
+          "name": "Paraguay",
+          "conf": "CMB",
+          "p": 5e-05,
+          "eliminated": false
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "code": "es",
+      "name": "Spain",
+      "conf": "UEFA",
+      "p": 0.20865,
+      "odds": "4/1",
+      "eliminated": false
+    },
+    {
+      "code": "ar",
+      "name": "Argentina",
+      "conf": "CMB",
+      "p": 0.16535,
+      "odds": "5/1",
+      "eliminated": false
+    },
+    {
+      "code": "fr",
+      "name": "France",
+      "conf": "UEFA",
+      "p": 0.1644,
+      "odds": "5/1",
+      "eliminated": false
+    },
+    {
+      "code": "gb-eng",
+      "name": "England",
+      "conf": "UEFA",
+      "p": 0.10345,
+      "odds": "17/2",
+      "eliminated": false
+    },
+    {
+      "code": "br",
+      "name": "Brazil",
+      "conf": "CMB",
+      "p": 0.09015,
+      "odds": "10/1",
+      "eliminated": false
+    },
+    {
+      "code": "pt",
+      "name": "Portugal",
+      "conf": "UEFA",
+      "p": 0.06905,
+      "odds": "13/1",
+      "eliminated": false
+    },
+    {
+      "code": "nl",
+      "name": "Netherlands",
+      "conf": "UEFA",
+      "p": 0.05775,
+      "odds": "16/1",
+      "eliminated": false
+    },
+    {
+      "code": "de",
+      "name": "Germany",
+      "conf": "UEFA",
+      "p": 0.0421,
+      "odds": "23/1",
+      "eliminated": false
+    },
+    {
+      "code": "hr",
+      "name": "Croatia",
+      "conf": "UEFA",
+      "p": 0.02665,
+      "odds": "37/1",
+      "eliminated": false
+    },
+    {
+      "code": "be",
+      "name": "Belgium",
+      "conf": "UEFA",
+      "p": 0.02155,
+      "odds": "45/1",
+      "eliminated": false
+    },
+    {
+      "code": "co",
+      "name": "Colombia",
+      "conf": "CMB",
+      "p": 0.0157,
+      "odds": "65/1",
+      "eliminated": false
+    },
+    {
+      "code": "uy",
+      "name": "Uruguay",
+      "conf": "CMB",
+      "p": 0.0149,
+      "odds": "65/1",
+      "eliminated": false
+    },
+    {
+      "code": "ch",
+      "name": "Switzerland",
+      "conf": "UEFA",
+      "p": 0.00585,
+      "odds": "170/1",
+      "eliminated": false
+    },
+    {
+      "code": "us",
+      "name": "USA",
+      "conf": "CCF",
+      "p": 0.00585,
+      "odds": "170/1",
+      "eliminated": false
+    },
+    {
+      "code": "mx",
+      "name": "Mexico",
+      "conf": "CCF",
+      "p": 0.005,
+      "odds": "200/1",
+      "eliminated": false
+    },
+    {
+      "code": "ma",
+      "name": "Morocco",
+      "conf": "CAF",
+      "p": 0.00135,
+      "odds": "700/1",
+      "eliminated": false
+    },
+    {
+      "code": "sn",
+      "name": "Senegal",
+      "conf": "CAF",
+      "p": 0.00065,
+      "odds": "1500/1",
+      "eliminated": false
+    },
+    {
+      "code": "jp",
+      "name": "Japan",
+      "conf": "AFC",
+      "p": 0.0005,
+      "odds": "2000/1",
+      "eliminated": false
+    },
+    {
+      "code": "ec",
+      "name": "Ecuador",
+      "conf": "CMB",
+      "p": 0.00045,
+      "odds": "2200/1",
+      "eliminated": false
+    },
+    {
+      "code": "kr",
+      "name": "South Korea",
+      "conf": "AFC",
+      "p": 0.00025,
+      "odds": "4000/1",
+      "eliminated": false
+    },
+    {
+      "code": "no",
+      "name": "Norway",
+      "conf": "UEFA",
+      "p": 0.00015,
+      "odds": "6700/1",
+      "eliminated": false
+    },
+    {
+      "code": "dz",
+      "name": "Algeria",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "au",
+      "name": "Australia",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "at",
+      "name": "Austria",
+      "conf": "UEFA",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "ba",
+      "name": "Bosnia and Herzegovina",
+      "conf": "UEFA",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "ca",
+      "name": "Canada",
+      "conf": "CCF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "cv",
+      "name": "Cape Verde",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "ci",
+      "name": "Cote d'Ivoire",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "cw",
+      "name": "Curacao",
+      "conf": "CCF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "cz",
+      "name": "Czechia",
+      "conf": "UEFA",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "cd",
+      "name": "DR Congo",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "eg",
+      "name": "Egypt",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "gh",
+      "name": "Ghana",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "ht",
+      "name": "Haiti",
+      "conf": "CCF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "ir",
+      "name": "Iran",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "iq",
+      "name": "Iraq",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "jo",
+      "name": "Jordan",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "nz",
+      "name": "New Zealand",
+      "conf": "OFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "pa",
+      "name": "Panama",
+      "conf": "CCF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "py",
+      "name": "Paraguay",
+      "conf": "CMB",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "qa",
+      "name": "Qatar",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "sa",
+      "name": "Saudi Arabia",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "gb-sct",
+      "name": "Scotland",
+      "conf": "UEFA",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "za",
+      "name": "South Africa",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "se",
+      "name": "Sweden",
+      "conf": "UEFA",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "tn",
+      "name": "Tunisia",
+      "conf": "CAF",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "tr",
+      "name": "Turkiye",
+      "conf": "UEFA",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    },
+    {
+      "code": "uz",
+      "name": "Uzbekistan",
+      "conf": "AFC",
+      "p": 5e-05,
+      "odds": "20000/1",
+      "eliminated": false
+    }
+  ],
+  "recent_results": [],
+  "knockout_bracket": []
+}

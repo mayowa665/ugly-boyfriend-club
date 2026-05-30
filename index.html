@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ugly Boyfriend Club World Cup Sweepstake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Ugly <span>Boyfriend</span> Club</h1>
+      <div class="eyebrow">World Cup Sweepstake '26</div>
+      <div class="meta" id="meta">
+        <span>Loading odds</span>
+        <span>48 Teams</span>
+        <span>12 Entrants</span>
+      </div>
+    </header>
+
+    <section class="status-band" aria-live="polite">
+      <div>
+        <div class="status-label">Latest</div>
+        <div id="updated">Fetching state.json</div>
+      </div>
+      <div>
+        <div class="status-label">Phase</div>
+        <div id="phase">Pre tournament</div>
+      </div>
+    </section>
+
+    <div class="recent" id="recent"></div>
+
+    <nav class="tabs" role="tablist" aria-label="Sweepstake views">
+      <button class="tab active" id="tab-cards" data-tab="cards" role="tab" aria-selected="true" aria-controls="view">The Draw</button>
+      <button class="tab" id="tab-eliminated" data-tab="eliminated" role="tab" aria-selected="false" aria-controls="view">Eliminated</button>
+      <button class="tab" id="tab-bracket" data-tab="bracket" role="tab" aria-selected="false" aria-controls="view">Bracket</button>
+      <button class="tab" id="tab-board" data-tab="board" role="tab" aria-selected="false" aria-controls="view">Odds Board</button>
+    </nav>
+
+    <main id="view" role="tabpanel" aria-labelledby="tab-cards">
+      <div class="error">Loading state.json...</div>
+    </main>
+
+    <footer>
+      11 June - 19 July 2026<br>
+      Odds derived from Monte Carlo simulation. Not real betting odds. For entertainment.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
