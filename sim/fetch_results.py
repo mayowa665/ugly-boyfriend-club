@@ -1,4 +1,6 @@
 import os
+import re
+import unicodedata
 from datetime import datetime, timezone
 from typing import Any
 
@@ -12,13 +14,17 @@ API_NAME_TO_CODE = {
     "Austria": "at",
     "Belgium": "be",
     "Bosnia and Herzegovina": "ba",
+    "Bosnia-Herzegovina": "ba",
+    "Bosnia & Herzegovina": "ba",
     "Brazil": "br",
     "Canada": "ca",
     "Cape Verde": "cv",
+    "Cabo Verde": "cv",
     "Colombia": "co",
     "Croatia": "hr",
     "Cote d'Ivoire": "ci",
     "Côte d'Ivoire": "ci",
+    "Ivory Coast": "ci",
     "Curacao": "cw",
     "Curaçao": "cw",
     "Czechia": "cz",
@@ -66,11 +72,30 @@ API_NAME_TO_CODE = {
 }
 
 
+def _normalize(name: str) -> str:
+    """Fold accents/case/punctuation so spelling quirks still match.
+
+    e.g. "Bosnia-Herzegovina", "Bosnia and Herzegovina" and "Bosnia & Herzegovina"
+    all collapse to the same key. Semantic aliases (USA/United States,
+    Korea Republic/South Korea, Ivory Coast/Côte d'Ivoire) still need explicit
+    entries in API_NAME_TO_CODE.
+    """
+    text = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii").lower()
+    text = re.sub(r"\b(and|the|of|ir|dr)\b", " ", text)  # drop connectors / IR Iran / DR Congo prefixes
+    return re.sub(r"[^a-z0-9]+", "", text)
+
+
+_NORMALIZED_NAME_TO_CODE = {_normalize(name): code for name, code in API_NAME_TO_CODE.items()}
+
+
 def _code_for(api_name: str) -> str:
-    try:
-        return API_NAME_TO_CODE[api_name]
-    except KeyError as exc:
-        raise RuntimeError(f"Unmapped team from results API: {api_name}") from exc
+    code = API_NAME_TO_CODE.get(api_name)
+    if code is not None:
+        return code
+    code = _NORMALIZED_NAME_TO_CODE.get(_normalize(api_name))
+    if code is not None:
+        return code
+    raise RuntimeError(f"Unmapped team from results API: {api_name}")
 
 
 def fetch_fixtures() -> list[dict[str, Any]]:
