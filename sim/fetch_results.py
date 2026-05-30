@@ -16,6 +16,7 @@ API_NAME_TO_CODE = {
     "Bosnia and Herzegovina": "ba",
     "Bosnia-Herzegovina": "ba",
     "Bosnia & Herzegovina": "ba",
+    "Bosnia-H.": "ba",
     "Brazil": "br",
     "Canada": "ca",
     "Cape Verde": "cv",
@@ -94,7 +95,7 @@ _NORMALIZED_NAME_TO_CODE = {_normalize(name): code for name, code in API_NAME_TO
 TLA_TO_CODE = {
     "ESP": "es", "ARG": "ar", "FRA": "fr", "ENG": "gb-eng", "BRA": "br",
     "POR": "pt", "NED": "nl", "GER": "de", "CRO": "hr", "BEL": "be",
-    "COL": "co", "URU": "uy", "SUI": "ch", "MAR": "ma", "USA": "us",
+    "COL": "co", "URY": "uy", "SUI": "ch", "MAR": "ma", "USA": "us",
     "MEX": "mx", "SEN": "sn", "JPN": "jp", "KOR": "kr", "AUT": "at",
     "ECU": "ec", "TUR": "tr", "IRN": "ir", "SWE": "se", "NOR": "no",
     "AUS": "au", "PAR": "py", "CIV": "ci", "ALG": "dz", "SCO": "gb-sct",
