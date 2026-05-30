@@ -20,6 +20,7 @@ API_NAME_TO_CODE = {
     "Canada": "ca",
     "Cape Verde": "cv",
     "Cabo Verde": "cv",
+    "Cape Verde Islands": "cv",
     "Colombia": "co",
     "Croatia": "hr",
     "Cote d'Ivoire": "ci",
@@ -81,21 +82,56 @@ def _normalize(name: str) -> str:
     entries in API_NAME_TO_CODE.
     """
     text = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii").lower()
-    text = re.sub(r"\b(and|the|of|ir|dr)\b", " ", text)  # drop connectors / IR Iran / DR Congo prefixes
+    text = re.sub(r"\b(and|the|of|ir|dr|islands?)\b", " ", text)  # drop connectors / IR Iran / DR Congo / "Islands"
     return re.sub(r"[^a-z0-9]+", "", text)
 
 
 _NORMALIZED_NAME_TO_CODE = {_normalize(name): code for name, code in API_NAME_TO_CODE.items()}
 
+# FIFA 3-letter codes (the API's `tla` field) for all 48 finalists. This is the
+# most stable identifier the feed provides, so it's the backstop when the display
+# name is unexpected (e.g. "Cape Verde Islands").
+TLA_TO_CODE = {
+    "ESP": "es", "ARG": "ar", "FRA": "fr", "ENG": "gb-eng", "BRA": "br",
+    "POR": "pt", "NED": "nl", "GER": "de", "CRO": "hr", "BEL": "be",
+    "COL": "co", "URU": "uy", "SUI": "ch", "MAR": "ma", "USA": "us",
+    "MEX": "mx", "SEN": "sn", "JPN": "jp", "KOR": "kr", "AUT": "at",
+    "ECU": "ec", "TUR": "tr", "IRN": "ir", "SWE": "se", "NOR": "no",
+    "AUS": "au", "PAR": "py", "CIV": "ci", "ALG": "dz", "SCO": "gb-sct",
+    "CZE": "cz", "EGY": "eg", "CAN": "ca", "TUN": "tn", "BIH": "ba",
+    "GHA": "gh", "KSA": "sa", "RSA": "za", "COD": "cd", "QAT": "qa",
+    "CPV": "cv", "PAN": "pa", "UZB": "uz", "JOR": "jo", "IRQ": "iq",
+    "HAI": "ht", "NZL": "nz", "CUW": "cw",
+}
 
-def _code_for(api_name: str) -> str:
+
+def _code_for(api_name: str) -> str | None:
+    """Resolve a single name string (exact, then accent/punctuation-normalized)."""
+    if not api_name:
+        return None
     code = API_NAME_TO_CODE.get(api_name)
     if code is not None:
         return code
-    code = _NORMALIZED_NAME_TO_CODE.get(_normalize(api_name))
-    if code is not None:
-        return code
-    raise RuntimeError(f"Unmapped team from results API: {api_name}")
+    return _NORMALIZED_NAME_TO_CODE.get(_normalize(api_name))
+
+
+def resolve_team(team: dict[str, Any]) -> str:
+    """Map an API team object to our code using every identifier it provides.
+
+    Tries name, then shortName, then the FIFA `tla` code. Only fails loudly if all
+    three are unrecognised, which for a fixed 48-team field should never happen.
+    """
+    for key in ("name", "shortName"):
+        code = _code_for(team.get(key) or "")
+        if code is not None:
+            return code
+    tla = (team.get("tla") or "").upper()
+    if tla in TLA_TO_CODE:
+        return TLA_TO_CODE[tla]
+    raise RuntimeError(
+        f"Unmapped team from results API: name={team.get('name')!r} "
+        f"shortName={team.get('shortName')!r} tla={team.get('tla')!r}"
+    )
 
 
 def fetch_fixtures() -> list[dict[str, Any]]:
@@ -123,8 +159,8 @@ def fetch_fixtures() -> list[dict[str, Any]]:
         status = match.get("status", "SCHEDULED")
         utc_date = match.get("utcDate")
         stage = match.get("stage") or match.get("group") or ""
-        home_code = _code_for(home_team["name"])
-        away_code = _code_for(away_team["name"])
+        home_code = resolve_team(home_team)
+        away_code = resolve_team(away_team)
 
         winner_code = None
         if winner == "HOME_TEAM":
